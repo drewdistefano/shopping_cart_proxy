@@ -16,6 +16,7 @@
     "react-router-dom": "^5.0.0"
   },
   "devDependencies": {
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "pm2": "^3.5.0"
   }
 }
