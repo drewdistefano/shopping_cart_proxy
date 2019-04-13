@@ -4,10 +4,40 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" >
     <title>Targit | Cart</title>
+  
+  <style>
+  #product_info{
+    left: 50px;
+    top: 50px;
+  }
+  
+  #cart{
+    left: 1350px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    float: right;
+    margin-right: 10px;
+  }
+
+  #carousel{
+    margin-top: 20px;
+  }
+
+  #reviews{
+    margin-bottom: 50px;
+  }
+
+  </style>
 </head>
+
 <body id="body">
-  <div id="product_info"></div>
-  <div id="cart"></div>
+  <div id="nav_bar"></div>
+  <span id="cart"></span>
+  <div>
+    <span id="product_info"></span>
+  </div>
+  
   <div id="carousel"></div>
   <div id="reviews"></div>
 
@@ -19,10 +49,14 @@
     };
   </script>
 
-  <script type="text/javascript" src="http://ec2-3-16-128-154.us-east-2.compute.amazonaws.com:3003/main.js"></script></body>
-  <script type="text/javascript" src=" http://ec2-3-19-70-44.us-east-2.compute.amazonaws.com:4000/main.js"></script></body>
-  <script type="text/javascript" src="http://ec2-18-221-92-39.us-east-2.compute.amazonaws.com:3004/bundle.js"></script></body>
-  <script type="text/javascript" src="http://ec2-3-19-71-180.us-east-2.compute.amazonaws.com:3002/main.js"></script></body>
-
-</script>
+  <script type="text/javascript" src="http://localhost:4001/main.js"></script>
+  <script type="text/javascript" src="http://ec2-3-16-128-154.us-east-2.compute.amazonaws.com:3003/main.js"></script>
+  <script type="text/javascript" src="http://ec2-3-19-70-44.us-east-2.compute.amazonaws.com:4000/main.js"></script>
+  <script type="text/javascript" src="http://ec2-18-221-92-39.us-east-2.compute.amazonaws.com:3004/bundle.js"></script>
+  <script type="text/javascript" src="http://ec2-3-19-71-180.us-east-2.compute.amazonaws.com:3002/main.js"></script>
+  
+  <script type="text/javascript">
+  changeItem(Math.floor(Math.random()*100)+1)
+  </script>
+</body>
 </html>
